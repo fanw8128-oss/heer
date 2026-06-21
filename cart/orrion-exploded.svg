@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION 台车 模块爆炸图 + 装配序列 (vector) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1500" viewBox="0 0 1400 1500" font-family="Montserrat,'Noto Sans CJK SC', 'Noto Sans SC', Arial, sans-serif">
+  <defs>
+    <linearGradient id="sh" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FBFCFC"/><stop offset="1" stop-color="#D7DBDD"/></linearGradient>
+    <linearGradient id="mt" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#C9CFD2"/><stop offset="0.5" stop-color="#F2F4F5"/><stop offset="1" stop-color="#B8BFC2"/></linearGradient>
+    <marker id="ah" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#0E7A5F"/></marker>
+    <style>
+      .num{fill:#0E7A5F;}.numT{fill:#fff;font-weight:800;font-size:20px;}
+      .ti{fill:#10211C;font-weight:700;font-size:22px;}
+      .de{fill:#5B6B66;font-size:15px;}
+      .ax{stroke:#B9C2BE;stroke-width:1.5;stroke-dasharray:6 6;}
+    </style>
+  </defs>
+  <rect width="1400" height="1500" fill="#FFFFFF"/>
+  <text x="60" y="60" font-size="30" font-weight="800" fill="#10211C">ORRION OMI-1 · 模块爆炸图与装配序列</text>
+  <text x="60" y="92" font-size="16" fill="#8A9A95">六大模块自上而下串联装配 · 光源引擎置于机箱内，经液芯光导上行至采集头</text>
+
+  <!-- central assembly axis -->
+  <line class="ax" x1="430" y1="140" x2="430" y2="1380"/>
+
+  <!-- 1 OPTICAL HEAD -->
+  <g transform="translate(330,150)">
+    <rect x="0" y="0" width="220" height="90" rx="34" fill="url(#sh)" stroke="#C2C8CB"/>
+    <ellipse cx="0" cy="45" rx="18" ry="40" fill="#2A3238"/>
+    <circle cx="0" cy="45" r="44" fill="none" stroke="#15A37B" stroke-width="6" opacity="0.5"/>
+    <rect x="200" y="14" width="26" height="64" rx="12" fill="url(#mt)"/>
+  </g>
+  <circle class="num" cx="700" cy="195" r="22"/><text class="numT" x="693" y="202">1</text>
+  <text class="ti" x="740" y="180">采集头 / Optical Head</text>
+  <text class="de" x="740" y="208">物镜组 + 二向色镜 + 单色 CMOS + 投射端口（内无光源）</text>
+  <text class="de" x="740" y="230">液芯光导出射口 + 白光环 LED + 防雾窗口；铝合金 CNC 外壳，重 &lt;0.9kg</text>
+
+  <!-- 2 ARM -->
+  <g transform="translate(360,290)">
+    <path d="M70 30 q-20 90 -70 120" fill="none" stroke="url(#mt)" stroke-width="30" stroke-linecap="round"/>
+    <circle cx="70" cy="30" r="20" fill="url(#mt)" stroke="#B0B7BA"/>
+    <circle cx="0" cy="150" r="18" fill="url(#mt)" stroke="#B0B7BA"/>
+  </g>
+  <circle class="num" cx="700" cy="345" r="22"/><text class="numT" x="693" y="352">2</text>
+  <text class="ti" x="740" y="330">阻尼平衡臂 / Counterbalanced Arm</text>
+  <text class="de" x="740" y="358">恒力弹簧 + 摩擦阻尼，任意位姿悬停；内走液芯光导 + 同轴线缆 + 接地</text>
+
+  <!-- 3 CONSOLE + LIGHT ENGINE -->
+  <g transform="translate(310,500)">
+    <rect x="0" y="0" width="260" height="240" rx="22" fill="url(#sh)" stroke="#C2C8CB"/>
+    <!-- light engine block -->
+    <rect x="24" y="24" width="120" height="80" rx="8" fill="#10211C"/>
+    <rect x="34" y="40" width="22" height="22" rx="3" fill="#7B61FF"/>
+    <rect x="62" y="40" width="22" height="22" rx="3" fill="#2D6BFF"/>
+    <rect x="90" y="40" width="22" height="22" rx="3" fill="#EDE6D2"/>
+    <text x="34" y="92" font-size="11" fill="#9fb0a8">LIGHT ENGINE</text>
+    <!-- compute -->
+    <rect x="160" y="24" width="76" height="80" rx="8" fill="#243038"/>
+    <text x="170" y="70" font-size="11" fill="#9fb0a8">AI / 采集卡</text>
+    <g stroke="#C9CFD2" stroke-width="3"><line x1="24" y1="150" x2="236" y2="150"/><line x1="24" y1="170" x2="236" y2="170"/><line x1="24" y1="190" x2="236" y2="190"/></g>
+  </g>
+  <circle class="num" cx="700" cy="560" r="22"/><text class="numT" x="693" y="567">3</text>
+  <text class="ti" x="740" y="545">主机 / 光源引擎机箱 / Console</text>
+  <text class="de" x="740" y="573">340nm + 450nm 紫外-可见 LED 模组 + 白光，TEC 恒温(±0.2℃)，EMI 屏蔽</text>
+  <text class="de" x="740" y="595">采集卡 + AI 计算单元 + 控制板 + 散热风道；激发光经液芯光导上行</text>
+
+  <!-- 4 DISPLAY -->
+  <g transform="translate(330,790)">
+    <rect x="0" y="0" width="220" height="150" rx="14" fill="#2A3238"/>
+    <rect x="12" y="12" width="196" height="126" rx="6" fill="#16222A"/>
+  </g>
+  <circle class="num" cx="700" cy="855" r="22"/><text class="numT" x="693" y="862">4</text>
+  <text class="ti" x="740" y="840">触控显示 / Touch Display</text>
+  <text class="de" x="740" y="868">15.6" 医用电容触控，-12° 倾角；VESA 快拆，磁吸盖板易清洁</text>
+
+  <!-- 5 BASE -->
+  <g transform="translate(300,990)">
+    <path d="M30 60 L230 60 L260 110 L0 110 Z" fill="url(#sh)" stroke="#C2C8CB"/>
+    <circle cx="40" cy="110" r="26" fill="#3A4248"/><circle cx="220" cy="110" r="26" fill="#3A4248"/>
+  </g>
+  <circle class="num" cx="700" cy="1050" r="22"/><text class="numT" x="693" y="1057">5</text>
+  <text class="ti" x="740" y="1035">移动底盘 / Mobile Base</text>
+  <text class="de" x="740" y="1063">钢制底架 + ABS 包覆；4× 医用脚轮(前两带刹)，低重心防倾</text>
+
+  <!-- 6 POWER -->
+  <g transform="translate(360,1140)">
+    <rect x="0" y="0" width="160" height="60" rx="10" fill="#E8A33D" opacity="0.9"/>
+    <text x="80" y="38" font-size="16" font-weight="700" fill="#5b3d0a" text-anchor="middle">LiFePO4</text>
+  </g>
+  <circle class="num" cx="700" cy="1175" r="22"/><text class="numT" x="693" y="1182">6</text>
+  <text class="ti" x="740" y="1160">电源 / 电池 / Power</text>
+  <text class="de" x="740" y="1188">医用隔离电源 + LiFePO4 电池(续航≥4h，兼底部配重)，UPS 不间断</text>
+
+  <!-- assembly flow note -->
+  <text x="60" y="1300" font-size="16" font-weight="700" fill="#0E7A5F">装配序列：⑤底盘 → ⑥电源 → ③机箱(含光源引擎) → ④显示 → ②平衡臂 → ①采集头（液芯光导贯穿②③①）</text>
+  <text x="60" y="1330" font-size="14" fill="#8A9A95">光导/线缆走线：机箱光源引擎 → 平衡臂内腔 → 采集头投射端口；信号线同路反向回机箱采集卡</text>
+</svg>

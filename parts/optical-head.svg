@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 采集头 Optical Head · 装配剖视 + 尺寸 (mm) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" font-family="Consolas,'Noto Sans CJK SC', 'Noto Sans SC', monospace">
+  <defs>
+    <marker id="d" markerWidth="9" markerHeight="9" refX="4.5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#10211C"/></marker>
+    <style>.o{fill:none;stroke:#10211C;stroke-width:1.6;}.dim{stroke:#0E7A5F;stroke-width:0.8;}.dt{fill:#0E7A5F;font-size:13px;}.ti{fill:#10211C;font-weight:700;}.cl{fill:#5B6B66;font-size:13px;}.h{fill:#EAF4F0;}</style>
+  </defs>
+  <rect width="1200" height="820" fill="#FFFFFF"/>
+  <rect x="20" y="20" width="1160" height="780" fill="none" stroke="#10211C"/>
+  <text x="40" y="50" class="ti" font-size="18">采集头 OPTICAL HEAD · 内部装配剖视</text>
+  <text x="40" y="72" class="cl">UNIT mm · 头内无光源，仅投射光学+成像；液芯光导由臂内引入</text>
+
+  <!-- shell -->
+  <g transform="translate(120,140)">
+    <path class="o h" d="M120 40 H720 a60 60 0 0 1 60 60 v140 a60 60 0 0 1 -60 60 H120 a60 60 0 0 1 -60 -60 V100 a60 60 0 0 1 60 -60 Z"/>
+    <!-- handle -->
+    <rect x="780" y="80" width="44" height="180" rx="20" class="o"/>
+    <text class="cl" x="785" y="300">握柄</text>
+
+    <!-- liquid light guide entry (from arm) -->
+    <path d="M0 60 H120" class="o" stroke="#E8A33D" stroke-width="6"/>
+    <text class="dt" x="-10" y="48">液芯光导入</text>
+
+    <!-- delivery optics -->
+    <rect x="150" y="40" width="60" height="60" rx="6" class="o"/><text class="cl" x="150" y="125">投射准直</text>
+    <!-- dichroic -->
+    <line x1="320" y1="90" x2="420" y2="210" class="o" stroke="#5BAEE0" stroke-width="4"/><text class="cl" x="330" y="80">二向色镜 45°</text>
+    <!-- mono CMOS -->
+    <rect x="150" y="160" width="70" height="100" rx="4" class="o"/><text class="cl" x="150" y="285">单色 CMOS</text>
+    <!-- emission filter -->
+    <line x1="240" y1="170" x2="240" y2="250" class="o" stroke="#15A37B" stroke-width="4"/><text class="cl" x="230" y="160">发射滤光片</text>
+    <!-- objective -->
+    <ellipse cx="600" cy="150" rx="14" ry="60" class="o"/><ellipse cx="640" cy="150" rx="14" ry="60" class="o"/><text class="cl" x="585" y="240">物镜组</text>
+    <!-- window -->
+    <rect x="690" y="100" width="14" height="100" class="o"/><text class="cl" x="660" y="95">防雾窗口</text>
+    <!-- white LED ring -->
+    <circle cx="697" cy="150" r="70" class="o" stroke-dasharray="3 3"/><text class="cl" x="650" y="250">白光环LED</text>
+    <!-- output axis arrow -->
+    <line x1="710" y1="150" x2="900" y2="150" class="o" stroke-dasharray="6 4" marker-end="url(#d)"/><text class="dt" x="800" y="140">出射光轴</text>
+
+    <!-- dims -->
+    <line x1="60" y1="330" x2="780" y2="330" class="dim" marker-start="url(#d)" marker-end="url(#d)"/><text class="dt" x="380" y="350">长 220</text>
+    <line x1="-40" y1="40" x2="-40" y2="300" class="dim" marker-start="url(#d)" marker-end="url(#d)"/><text class="dt" x="-70" y="180" transform="rotate(-90 -70 180)">高 110</text>
+  </g>
+
+  <!-- BOM -->
+  <g transform="translate(80,560)" font-size="13" fill="#10211C">
+    <text class="ti" x="0" y="0" font-size="15">BOM / 主要件</text>
+    <text x="0" y="28">A 铝合金CNC上壳 (阳极氧化, 璧厚2.5)   B 铝合金下壳   C 物镜组 (定焦, 涂层)</text>
+    <text x="0" y="52">D 二向色镜 (45°分光)   E 发射滤光片   F 单色CMOS模组   G 防雾加热窗口</text>
+    <text x="0" y="76">H 白光环LED   I 液芯光导接口(SMA)   J 握柄(硅胶包覆)   K 软板FPC+屏蔽线</text>
+    <text class="cl" x="0" y="108">开模: 采集头壳体为CNC铝(小批)→压铸铝(量产, 需拔模1.5°+加强筋); 握柄硅胶二次包胶</text>
+  </g>
+</svg>

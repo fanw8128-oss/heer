@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION 光源架构 + 激发/采集光路 (vector) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 1000" font-family="Montserrat,'Noto Sans CJK SC', 'Noto Sans SC', Arial, sans-serif">
+  <defs>
+    <linearGradient id="uvbeam" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7B61FF" stop-opacity="0.85"/><stop offset="1" stop-color="#7B61FF" stop-opacity="0.25"/></linearGradient>
+    <linearGradient id="flbeam" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#15A37B" stop-opacity="0.7"/><stop offset="1" stop-color="#15A37B" stop-opacity="0.15"/></linearGradient>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#10211C"/></marker>
+    <style>.t{fill:#10211C;font-weight:700;}.s{fill:#5B6B66;font-size:14px;}.lab{fill:#10211C;font-size:14px;font-weight:600;}</style>
+  </defs>
+  <rect width="1500" height="1000" fill="#FFFFFF"/>
+  <text x="60" y="55" font-size="28" font-weight="800" fill="#10211C">光源架构与激发/采集光路 · 光源在机箱，液芯光导上行至采集头</text>
+
+  <!-- ===== CONSOLE LIGHT ENGINE (机箱内) ===== -->
+  <rect x="60" y="640" width="420" height="300" rx="18" fill="#F4F6F5" stroke="#0E7A5F" stroke-width="2"/>
+  <text class="t" x="80" y="675" font-size="18">① 机箱光源引擎 (恒温/屏蔽)</text>
+  <!-- LED modules -->
+  <rect x="90" y="700" width="70" height="50" rx="6" fill="#7B61FF"/><text x="98" y="770" class="s">340nm</text>
+  <rect x="170" y="700" width="70" height="50" rx="6" fill="#2D6BFF"/><text x="178" y="770" class="s">450nm</text>
+  <rect x="250" y="700" width="70" height="50" rx="6" fill="#EDE6D2" stroke="#cdbf95"/><text x="258" y="770" class="s">白光</text>
+  <!-- TEC -->
+  <rect x="90" y="800" width="230" height="40" rx="6" fill="#243038"/><text x="100" y="826" fill="#9fb0a8" font-size="13">TEC 恒温 ±0.2℃ · 光纤耦合器</text>
+  <!-- combine to fiber -->
+  <path d="M125 700 L360 690" stroke="#7B61FF" stroke-width="3"/>
+  <path d="M205 700 L360 690" stroke="#2D6BFF" stroke-width="3"/>
+  <circle cx="365" cy="690" r="10" fill="#10211C"/><text x="350" y="668" class="s">耦合</text>
+
+  <!-- ===== LIQUID LIGHT GUIDE up the arm ===== -->
+  <path d="M365 690 C500 690 520 400 720 360" fill="none" stroke="#E8A33D" stroke-width="10" stroke-linecap="round"/>
+  <text x="470" y="540" class="lab" transform="rotate(-32 470 540)">液芯光导 (沿平衡臂内腔，无紫外光导损耗)</text>
+
+  <!-- ===== OPTICAL HEAD ===== -->
+  <rect x="700" y="300" width="360" height="220" rx="20" fill="#F4F6F5" stroke="#0E7A5F" stroke-width="2"/>
+  <text class="t" x="720" y="335" font-size="18">② 采集头 (头内无光源)</text>
+  <!-- mono CMOS -->
+  <rect x="725" y="360" width="70" height="120" rx="6" fill="#1A2329"/><text x="725" y="500" class="s">单色 CMOS</text>
+  <!-- dichroic -->
+  <line x1="840" y1="360" x2="900" y2="480" stroke="#5BAEE0" stroke-width="6"/><text x="845" y="350" class="s">二向色镜</text>
+  <!-- objective -->
+  <ellipse cx="980" cy="420" rx="16" ry="46" fill="#BFD8EA" stroke="#8FB4cc"/><ellipse cx="1010" cy="420" rx="16" ry="46" fill="#BFD8EA" stroke="#8FB4cc"/><text x="955" y="500" class="s">物镜组</text>
+  <!-- light delivery exit -->
+  <circle cx="1045" cy="420" r="8" fill="#7B61FF"/>
+
+  <!-- ===== EXCITATION beam out + spot ===== -->
+  <path d="M1050 420 L1330 640 L1330 720 L1050 470 Z" fill="url(#uvbeam)"/>
+  <!-- return fluorescence -->
+  <path d="M1330 690 L1050 460 L1050 440 L1330 660 Z" fill="url(#flbeam)"/>
+
+  <!-- ===== TISSUE ===== -->
+  <rect x="1300" y="600" width="150" height="160" rx="12" fill="#E9C7C7" stroke="#cf9a9a"/>
+  <text x="1320" y="690" class="s" fill="#7a3b3b">宫颈上皮</text>
+  <rect x="1310" y="620" width="120" height="8" rx="4" fill="#15A37B"/>
+  <text x="1230" y="585" class="lab" fill="#7B61FF">激发光斑 &gt; 30mm</text>
+
+  <!-- working distance -->
+  <line x1="1050" y1="800" x2="1330" y2="800" stroke="#10211C" stroke-width="1.5" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="1090" y="828" class="lab">非接触工作距离 ≈ 200mm（体外）</text>
+
+  <!-- legend / flow -->
+  <text x="60" y="120" class="lab" fill="#0E7A5F">光路链：机箱LED(340/450/白光) → 耦合器 → 液芯光导(沿臂) → 采集头投射口 → 体外200mm激发 → 组织荧光(NADH/FAD) → 物镜 → 二向色镜 → 单色CMOS → 采集卡/AI</text>
+
+  <!-- TDM timing -->
+  <text x="60" y="170" class="t" font-size="18">微秒级时分复用 (TDM) 单帧时序</text>
+  <g transform="translate(60,190)">
+    <text x="0" y="40" class="s">340nm</text><rect x="80" y="25" width="120" height="24" rx="4" fill="#7B61FF"/><rect x="360" y="25" width="120" height="24" rx="4" fill="#7B61FF" opacity="0.4"/>
+    <text x="0" y="90" class="s">450nm</text><rect x="220" y="75" width="120" height="24" rx="4" fill="#2D6BFF"/><rect x="500" y="75" width="120" height="24" rx="4" fill="#2D6BFF" opacity="0.4"/>
+    <text x="0" y="140" class="s">采集</text><rect x="80" y="125" width="560" height="24" rx="4" fill="none" stroke="#10211C" stroke-dasharray="5 4"/><text x="200" y="142" class="s">交替捕获 NADH / FAD（总曝光 2s ± 0.5s）</text>
+  </g>
+</svg>

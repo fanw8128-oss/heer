@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORRION 欧锐安 · 设计全案</title>
+<style>
+  :root{--em:#0E7A5F;--ink:#10211C;--am:#E8A33D;}
+  *{box-sizing:border-box} body{margin:0;font-family:-apple-system,"Segoe UI","Noto Sans SC",sans-serif;color:var(--ink);background:#F7F9F9}
+  header{padding:48px 6vw;border-bottom:1px solid #E2E8E5;background:#fff}
+  header h1{margin:0;font-size:42px;letter-spacing:6px} header p{color:#5B6B66;margin:8px 0 0}
+  .tag{color:var(--am);font-weight:700}
+  section{padding:40px 6vw;border-bottom:1px solid #EDEFEE}
+  h2{font-size:14px;letter-spacing:3px;color:#8A9A95;text-transform:uppercase;margin:0 0 18px}
+  .card{background:#fff;border:1px solid #E2E8E5;border-radius:16px;padding:20px;box-shadow:0 6px 24px rgba(16,33,28,.04)}
+  .card img,.card object{width:100%;height:auto;display:block;border-radius:8px}
+  .cap{margin-top:12px;font-size:14px;color:#5B6B66}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:24px}
+  a{color:var(--em)}
+</style>
+</head>
+<body>
+<header>
+  <h1>ORRION <span style="font-size:24px;letter-spacing:8px">欧锐安</span></h1>
+  <p>Optical Metabolic Imaging · 光学代谢成像系统 — <span class="tag">量化最早的那一束信号</span></p>
+</header>
+
+<section>
+  <h2>Brand / 品牌标志</h2>
+  <div class="card"><object data="brand/orrion-logo.svg" type="image/svg+xml"></object>
+  <div class="cap">光圈+焦点标志 · 平台级定位（不绑定单一科室）· 含单色/设备蚀刻/色板规范</div></div>
+</section>
+
+<section>
+  <h2>Industrial Design / 外观与架构</h2>
+  <div class="grid">
+    <div class="card"><object data="cart/orrion-cart-render.svg" type="image/svg+xml"></object><div class="cap">台车展示效果图（3/4 矢量渲染）</div></div>
+    <div class="card"><object data="cart/orrion-exploded.svg" type="image/svg+xml"></object><div class="cap">六模块爆炸图 + 装配序列</div></div>
+    <div class="card"><object data="cart/orrion-optical-path.svg" type="image/svg+xml"></object><div class="cap">光源架构：340/450nm 在机箱 → 液芯光导 → 采集头 → 体外 200mm 激发</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Engineering Drawings / 标准化图纸</h2>
+  <div class="grid">
+    <div class="card"><object data="parts/ga-three-view.svg" type="image/svg+xml"></object><div class="cap">总装三视图 + 总体尺寸 + 关键规格</div></div>
+    <div class="card"><object data="parts/optical-head.svg" type="image/svg+xml"></object><div class="cap">采集头内部装配剖视 + BOM + 开模</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Docs</h2>
+  <p>设计全案（企业文化 / 品牌规范 / 模块 / 开模 / 装配 / 操作 / 宣传）：<a href="docs/ORRION-设计全案.md">docs/ORRION-设计全案.md</a></p>
+</section>
+</body>
+</html>

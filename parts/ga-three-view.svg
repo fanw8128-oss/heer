@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION OMI-1 总装三视图 + 总体尺寸 (GA drawing, mm) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1050" viewBox="0 0 1500 1050" font-family="Consolas,'Noto Sans CJK SC', 'Noto Sans SC', monospace">
+  <defs>
+    <marker id="d" markerWidth="9" markerHeight="9" refX="4.5" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#10211C"/></marker>
+    <style>.o{fill:none;stroke:#10211C;stroke-width:1.6;}.c{fill:none;stroke:#10211C;stroke-width:0.8;stroke-dasharray:8 3 2 3;}.dim{stroke:#0E7A5F;stroke-width:0.8;}.dt{fill:#0E7A5F;font-size:13px;}.ti{fill:#10211C;font-size:14px;font-weight:700;}.box{fill:none;stroke:#10211C;stroke-width:1;}</style>
+  </defs>
+  <rect width="1500" height="1050" fill="#FFFFFF"/>
+
+  <!-- title block -->
+  <rect x="20" y="20" width="1460" height="1010" class="box"/>
+  <text x="40" y="48" class="ti" font-size="18">ORRION OMI-1 · GENERAL ASSEMBLY / 总装三视图</text>
+  <text x="40" y="70" fill="#5B6B66" font-size="12">UNIT: mm · SCALE 1:10 · PROJECTION: 第一角法 · 公差 GB/T 1804-m</text>
+
+  <!-- ===== FRONT VIEW ===== -->
+  <g transform="translate(120,120)">
+    <text class="ti" x="0" y="-10">FRONT / 主视图</text>
+    <!-- head -->
+    <rect x="120" y="0" width="150" height="55" rx="22" class="o"/>
+    <ellipse cx="120" cy="27" rx="12" ry="26" class="o"/>
+    <!-- arm -->
+    <path d="M150 55 q-30 70 -70 95" class="o"/>
+    <!-- column -->
+    <rect x="40" y="150" width="160" height="300" rx="14" class="o"/>
+    <!-- display -->
+    <g transform="rotate(-10 120 130)"><rect x="40" y="95" width="170" height="110" rx="8" class="o"/></g>
+    <!-- base -->
+    <path d="M0 470 L240 470 L280 520 L-40 520 Z" class="o"/>
+    <circle cx="0" cy="520" r="22" class="o"/><circle cx="240" cy="520" r="22" class="o"/>
+    <!-- centerline -->
+    <line x1="120" y1="-30" x2="120" y2="555" class="c"/>
+
+    <!-- overall height dim -->
+    <line x1="-90" y1="0" x2="-90" y2="542" class="dim" marker-start="url(#d)" marker-end="url(#d)"/>
+    <text class="dt" x="-130" y="280" transform="rotate(-90 -130 280)">总高 1420 (采集头收起)</text>
+    <!-- working height of head -->
+    <line x1="-60" y1="27" x2="-60" y2="450" class="dim" marker-start="url(#d)" marker-end="url(#d)"/>
+    <text class="dt" x="-55" y="240" transform="rotate(-90 -55 240)">采集头中心 ~1080</text>
+    <!-- base width -->
+    <line x1="-40" y1="560" x2="280" y2="560" class="dim" marker-start="url(#d)" marker-end="url(#d)"/>
+    <text class="dt" x="80" y="580">底盘宽 600</text>
+  </g>
+
+  <!-- ===== SIDE VIEW ===== -->
+  <g transform="translate(620,120)">
+    <text class="ti" x="0" y="-10">SIDE / 侧视图 (含工作距离)</text>
+    <rect x="40" y="150" width="120" height="300" rx="14" class="o"/>
+    <g transform="rotate(-10 100 130)"><rect x="20" y="95" width="150" height="110" rx="8" class="o"/></g>
+    <path d="M120 55 q90 -10 150 30" class="o"/>
+    <rect x="250" y="60" width="120" height="48" rx="20" class="o"/>
+    <ellipse cx="370" cy="84" rx="10" ry="22" class="o"/>
+    <path d="M-20 470 L200 470 L240 520 L-60 520 Z" class="o"/>
+    <circle cx="0" cy="520" r="22" class="o"/><circle cx="180" cy="520" r="22" class="o"/>
+    <!-- working distance to phantom plane -->
+    <line x1="385" y1="84" x2="520" y2="84" class="dim" marker-start="url(#d)" marker-end="url(#d)"/>
+    <text class="dt" x="395" y="74">工作距离 200</text>
+    <line x1="520" y1="40" x2="520" y2="140" class="o" stroke-dasharray="4 3"/>
+    <text class="dt" x="500" y="160">激发面(体外)</text>
+    <!-- depth -->
+    <line x1="-60" y1="545" x2="240" y2="545" class="dim" marker-start="url(#d)" marker-end="url(#d)"/>
+    <text class="dt" x="40" y="565">底盘深 700</text>
+  </g>
+
+  <!-- ===== TOP VIEW (base footprint) ===== -->
+  <g transform="translate(150,720)">
+    <text class="ti" x="0" y="-10">TOP / 俯视 (底盘)</text>
+    <rect x="0" y="0" width="220" height="180" rx="20" class="o"/>
+    <circle cx="25" cy="25" r="16" class="o"/><circle cx="195" cy="25" r="16" class="o"/>
+    <circle cx="25" cy="155" r="16" class="o"/><circle cx="195" cy="155" r="16" class="o"/>
+    <line x1="110" y1="-15" x2="110" y2="195" class="c"/><line x1="-15" y1="90" x2="235" y2="90" class="c"/>
+    <line x1="0" y1="210" x2="220" y2="210" class="dim" marker-start="url(#d)" marker-end="url(#d)"/><text class="dt" x="90" y="228">600</text>
+    <line x1="250" y1="0" x2="250" y2="180" class="dim" marker-start="url(#d)" marker-end="url(#d)"/><text class="dt" x="258" y="95">700</text>
+    <text class="dt" x="0" y="265">脚轮 Ø100 医用 · 前两带刹</text>
+  </g>
+
+  <!-- spec block -->
+  <g transform="translate(620,720)">
+    <rect x="0" y="0" width="760" height="270" class="box"/>
+    <text class="ti" x="16" y="28">关键规格 / KEY SPECS</text>
+    <g font-size="13" fill="#10211C">
+      <text x="16" y="58">总高(收起) ······ 1420 mm</text>
+      <text x="16" y="84">底盘 W×D ······· 600 × 700 mm</text>
+      <text x="16" y="110">整机重量 ········ ≈ 95 kg (含电池)</text>
+      <text x="16" y="136">采集头重量 ······ &lt; 0.9 kg</text>
+      <text x="16" y="170">外壳材质 ········ ABS+PC / 铝合金CNC(头)</text>
+      <text x="16" y="196">表面处理 ········ 阳极氧化 + 哑光UV漆</text>
+      <text x="16" y="222">电源 ············ 医用隔离 + LiFePO4(≥4h)</text>
+      <text x="420" y="58">非接触工作距离 ··· 200 ± 30 mm</text>
+      <text x="420" y="84">激发光斑 ········ &gt; 30 mm</text>
+      <text x="420" y="110">激发波长 ········ 340 / 450 nm + 白光</text>
+      <text x="420" y="136">单帧总曝光 ······ 2 s ± 0.5 s (TDM)</text>
+      <text x="420" y="170">防护等级 ········ IP21 / IP54(头窗口)</text>
+      <text x="420" y="196">合规目标 ········ GB 9706.1 / IEC 60601-1</text>
+      <text x="420" y="222">脚轮 ············ 4× Ø100，前两带刹</text>
+    </g>
+  </g>
+</svg>

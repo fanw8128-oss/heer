@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION 台车 展示效果图 (vector render) v2 — 高端医疗设备外观 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400" font-family="Montserrat,'Noto Sans CJK SC', 'Noto Sans SC', Arial, sans-serif">
+  <defs>
+    <linearGradient id="shellV" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FCFDFD"/><stop offset="0.45" stop-color="#EEF0F1"/><stop offset="1" stop-color="#D4D9DB"/>
+    </linearGradient>
+    <linearGradient id="shellH" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FCFDFD"/><stop offset="1" stop-color="#DCE0E2"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#BFC6C9"/><stop offset="0.5" stop-color="#F2F4F5"/><stop offset="1" stop-color="#B2B9BC"/>
+    </linearGradient>
+    <linearGradient id="bezel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A434A"/><stop offset="1" stop-color="#222A30"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16242C"/><stop offset="1" stop-color="#0A1318"/>
+    </linearGradient>
+    <linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15A37B"/><stop offset="1" stop-color="#7B61FF"/>
+    </linearGradient>
+    <radialGradient id="floor" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#BFC6CA" stop-opacity="0.5"/><stop offset="1" stop-color="#BFC6CA" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="1400" fill="#F7F9F9"/>
+  <ellipse cx="600" cy="1305" rx="400" ry="55" fill="url(#floor)"/>
+
+  <!-- ===== MOBILE BASE ===== -->
+  <path d="M330 1235 L780 1235 L880 1300 L230 1300 Z" fill="url(#shellV)" stroke="#C2C8CB" stroke-width="2"/>
+  <ellipse cx="330" cy="1300" rx="40" ry="40" fill="#39424A"/><ellipse cx="780" cy="1300" rx="40" ry="40" fill="#39424A"/>
+  <circle cx="330" cy="1300" r="18" fill="#737E84"/><circle cx="780" cy="1300" r="18" fill="#737E84"/>
+
+  <!-- ===== POWER / BATTERY (lower, between base & column) ===== -->
+  <rect x="470" y="1180" width="220" height="70" rx="12" fill="url(#shellH)" stroke="#C2C8CB"/>
+  <rect x="500" y="1200" width="160" height="30" rx="6" fill="#E8A33D"/>
+  <text x="580" y="1222" font-size="16" font-weight="700" fill="#5b3d0a" text-anchor="middle">LiFePO4</text>
+
+  <!-- ===== BODY COLUMN (console + light engine) ===== -->
+  <rect x="455" y="760" width="250" height="430" rx="26" fill="url(#shellV)" stroke="#C2C8CB" stroke-width="2"/>
+  <rect x="485" y="800" width="190" height="150" rx="14" fill="url(#shellH)" stroke="#CDD3D6"/>
+  <text x="580" y="885" font-size="13" letter-spacing="1" fill="#A6AFB3" text-anchor="middle">LIGHT ENGINE · AI</text>
+  <g stroke="#C9CFD2" stroke-width="3">
+    <line x1="495" y1="1010" x2="665" y2="1010"/><line x1="495" y1="1030" x2="665" y2="1030"/>
+    <line x1="495" y1="1050" x2="665" y2="1050"/><line x1="495" y1="1070" x2="665" y2="1070"/>
+  </g>
+  <circle cx="580" cy="1120" r="11" fill="none" stroke="#15A37B" stroke-width="3"/>
+  <text x="580" y="1165" font-size="14" letter-spacing="2" fill="#9AA4A8" text-anchor="middle" font-weight="600">ORRION · OMI-1</text>
+
+  <!-- ===== DISPLAY (sits on column, tilted back) ===== -->
+  <g transform="rotate(-8 600 620)">
+    <rect x="345" y="455" width="510" height="320" rx="22" fill="url(#bezel)"/>
+    <rect x="365" y="475" width="470" height="262" rx="8" fill="url(#screen)"/>
+    <clipPath id="sc"><rect x="365" y="475" width="300" height="262" rx="8"/></clipPath>
+    <g clip-path="url(#sc)">
+      <rect x="365" y="475" width="160" height="262" fill="#23C552"/>
+      <rect x="520" y="475" width="150" height="262" fill="#E0392E"/>
+      <rect x="485" y="475" width="60" height="262" fill="#9BC34A" opacity="0.75"/>
+    </g>
+    <g stroke="#9CFF6B" stroke-width="2"><line x1="515" y1="565" x2="515" y2="645"/><line x1="475" y1="605" x2="555" y2="605"/></g>
+    <rect x="680" y="490" width="150" height="190" rx="6" fill="#11181D"/>
+    <g fill="#39444C"><rect x="694" y="506" width="122" height="13" rx="3"/><rect x="694" y="529" width="122" height="13" rx="3"/><rect x="694" y="552" width="122" height="13" rx="3"/></g>
+    <rect x="694" y="640" width="122" height="22" rx="5" fill="#15A37B"/>
+    <text x="755" y="656" font-size="12" fill="#fff" text-anchor="middle" font-weight="700">CONFIRM</text>
+    <text x="378" y="720" font-size="14" fill="#E8A33D" font-weight="700">AI: CIN3 · 91.2% conf</text>
+  </g>
+
+  <!-- ===== BALANCE ARM (rises behind display top-right, to head) ===== -->
+  <path d="M838 470 C880 410 830 360 860 330" fill="none" stroke="url(#metal)" stroke-width="30" stroke-linecap="round"/>
+  <circle cx="836" cy="475" r="20" fill="url(#metal)" stroke="#AEB5B8"/>
+  <circle cx="860" cy="330" r="20" fill="url(#metal)" stroke="#AEB5B8"/>
+
+  <!-- ===== OPTICAL HEAD ===== -->
+  <g transform="rotate(20 900 300)">
+    <rect x="820" y="250" width="220" height="108" rx="50" fill="url(#shellV)" stroke="#C2C8CB" stroke-width="2"/>
+    <rect x="1000" y="262" width="34" height="84" rx="16" fill="url(#metal)"/>
+    <ellipse cx="820" cy="304" rx="26" ry="54" fill="#2A3238"/>
+    <ellipse cx="820" cy="304" rx="19" ry="44" fill="#0C1216"/>
+    <ellipse cx="820" cy="304" rx="30" ry="58" fill="none" stroke="url(#ringG)" stroke-width="7"/>
+    <circle cx="910" cy="242" r="6" fill="#15A37B"/>
+  </g>
+
+  <!-- ===== BRAND (new aperture mark) ===== -->
+  <g transform="translate(70,80)">
+    <g transform="scale(0.42)">
+      <circle cx="100" cy="100" r="92" fill="none" stroke="#0E7A5F" stroke-width="6"/>
+      <g fill="none" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round">
+        <line x1="139" y1="167.5" x2="100" y2="134"/><line x1="61" y1="167.5" x2="70.6" y2="117"/>
+        <line x1="22" y1="100" x2="70.6" y2="83"/><line x1="61" y1="32.5" x2="100" y2="66"/>
+        <line x1="139" y1="32.5" x2="129.4" y2="83"/>
+      </g>
+      <line x1="178" y1="100" x2="129.4" y2="117" stroke="#E8A33D" stroke-width="11" stroke-linecap="round"/>
+      <circle cx="100" cy="100" r="9" fill="#E8A33D"/>
+    </g>
+    <text x="100" y="62" font-size="38" font-weight="800" letter-spacing="6" fill="#10211C">ORRION</text>
+  </g>
+  <text x="70" y="1360" font-size="20" fill="#8A9A95" font-weight="600">展示效果图 · 非接触式光学代谢成像台车 OMI-1</text>
+</svg>
