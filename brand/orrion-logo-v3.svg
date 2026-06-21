@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION LOGO 概念稿 v3 — 无缺口 / 大厂范 / 有寓意 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1200" viewBox="0 0 1520 1200"
+     font-family="'Noto Sans CJK SC',Montserrat,'Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <style>
+      .wm{fill:#10211C;font-weight:800;letter-spacing:7px;}
+      .sub{fill:#8A9A95;font-size:15px;letter-spacing:1px;}
+      .lbl{fill:#8A9A95;font-size:16px;letter-spacing:2px;font-weight:700;}
+      .name{fill:#10211C;font-size:21px;font-weight:800;}
+      .mean{fill:#0E7A5F;font-size:14px;font-weight:600;}
+      .desc{fill:#5B6B66;font-size:13px;}
+    </style>
+  </defs>
+  <rect width="1520" height="1200" fill="#FFFFFF"/>
+  <text x="60" y="52" font-size="26" font-weight="800" fill="#10211C"
+        font-family="'Noto Sans CJK SC',Montserrat,sans-serif">ORRION · LOGO 概念稿 v3 — 无缺口 · 大厂范 · 有寓意</text>
+  <line x1="60" y1="72" x2="1460" y2="72" stroke="#E2E8E5"/>
+
+  <!-- ============================================================ -->
+  <!-- A. LENS MARK — 完整镜圈 + 焦点 -->
+  <!-- ============================================================ -->
+  <g transform="translate(60,108)">
+    <text class="lbl" x="0" y="0">A</text>
+    <text class="name" x="34" y="3" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">LENS RING · 镜圈</text>
+    <text class="mean" x="34" y="25" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">寓意：完整的镜头光圈边界，琥珀焦点是被量化的信号。无缺口，圆满、精密。</text>
+    <text class="desc" x="34" y="44" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">大粗环 = 镜头口径边界；中心琥珀实点 = 被捕获的信号焦点。形如顶级镜头前组。</text>
+
+    <!-- hero mark: bold ring + amber dot -->
+    <g transform="translate(40,56)">
+      <circle cx="90" cy="90" r="72" fill="none" stroke="#0E7A5F" stroke-width="22"/>
+      <circle cx="90" cy="90" r="14" fill="#E8A33D"/>
+    </g>
+
+    <!-- horizontal lockup -->
+    <g transform="translate(270,110)">
+      <circle cx="52" cy="52" r="42" fill="none" stroke="#0E7A5F" stroke-width="13"/>
+      <circle cx="52" cy="52" r="8" fill="#E8A33D"/>
+      <text class="wm" x="112" y="70" font-size="56" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+      <text class="sub" x="116" y="98" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+
+    <!-- dark bg -->
+    <g transform="translate(840,70)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <circle cx="62" cy="75" r="34" fill="none" stroke="#FFFFFF" stroke-width="10"/>
+      <circle cx="62" cy="75" r="6" fill="#E8A33D"/>
+      <text x="110" y="90" fill="#fff" font-size="28" font-weight="800" letter-spacing="3"
+            font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+    </g>
+
+    <!-- small size -->
+    <g transform="translate(1220,90)">
+      <text class="desc" x="0" y="-8" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">32px</text>
+      <circle cx="16" cy="16" r="12" fill="none" stroke="#0E7A5F" stroke-width="4"/>
+      <circle cx="16" cy="16" r="3" fill="#E8A33D"/>
+    </g>
+    <!-- app icon -->
+    <g transform="translate(1280,70)">
+      <rect width="80" height="80" rx="18" fill="#0E7A5F"/>
+      <circle cx="40" cy="40" r="26" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+      <circle cx="40" cy="40" r="5" fill="#E8A33D"/>
+    </g>
+  </g>
+
+  <line x1="60" y1="300" x2="1460" y2="300" stroke="#EDEFEE"/>
+
+  <!-- ============================================================ -->
+  <!-- B. MERIDIAN — 完整圆环 + 光轴线 + 焦点 -->
+  <!-- ============================================================ -->
+  <g transform="translate(60,336)">
+    <text class="lbl" x="0" y="0">B</text>
+    <text class="name" x="34" y="3" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">MERIDIAN · 光轴</text>
+    <text class="mean" x="34" y="25" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">寓意：光轴（子午线）穿越镜圈，在焦平面汇聚为一点——信号量化的那一刻。</text>
+    <text class="desc" x="34" y="44" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">圆环 = 光学口径；细轴线 = 精密光轴；琥珀点 = 焦点/被测信号。极简，Leica 式高级感。</text>
+
+    <!-- hero mark -->
+    <g transform="translate(40,56)">
+      <circle cx="90" cy="90" r="70" fill="none" stroke="#0E7A5F" stroke-width="16"/>
+      <line x1="90" y1="12" x2="90" y2="168" stroke="#0E7A5F" stroke-width="3.5"/>
+      <circle cx="90" cy="90" r="13" fill="#E8A33D"/>
+    </g>
+
+    <!-- horizontal lockup -->
+    <g transform="translate(270,110)">
+      <circle cx="52" cy="52" r="40" fill="none" stroke="#0E7A5F" stroke-width="9"/>
+      <line x1="52" y1="6" x2="52" y2="98" stroke="#0E7A5F" stroke-width="2.2"/>
+      <circle cx="52" cy="52" r="7.5" fill="#E8A33D"/>
+      <text class="wm" x="112" y="70" font-size="56" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+      <text class="sub" x="116" y="98" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+
+    <!-- dark bg -->
+    <g transform="translate(840,70)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <circle cx="62" cy="75" r="32" fill="none" stroke="#FFFFFF" stroke-width="7.5"/>
+      <line x1="62" y1="36" x2="62" y2="114" stroke="#FFFFFF" stroke-width="2"/>
+      <circle cx="62" cy="75" r="5.5" fill="#E8A33D"/>
+      <text x="110" y="90" fill="#fff" font-size="28" font-weight="800" letter-spacing="3"
+            font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+    </g>
+
+    <!-- small size -->
+    <g transform="translate(1220,90)">
+      <text class="desc" x="0" y="-8" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">32px</text>
+      <circle cx="16" cy="16" r="12" fill="none" stroke="#0E7A5F" stroke-width="3.5"/>
+      <line x1="16" y1="2" x2="16" y2="30" stroke="#0E7A5F" stroke-width="1.5"/>
+      <circle cx="16" cy="16" r="2.8" fill="#E8A33D"/>
+    </g>
+    <!-- app icon -->
+    <g transform="translate(1280,70)">
+      <rect width="80" height="80" rx="18" fill="#0E7A5F"/>
+      <circle cx="40" cy="40" r="24" fill="none" stroke="#FFFFFF" stroke-width="6"/>
+      <line x1="40" y1="10" x2="40" y2="70" stroke="#FFFFFF" stroke-width="1.8"/>
+      <circle cx="40" cy="40" r="5" fill="#E8A33D"/>
+    </g>
+  </g>
+
+  <line x1="60" y1="530" x2="1460" y2="530" stroke="#EDEFEE"/>
+
+  <!-- ============================================================ -->
+  <!-- C. CONVERGENCE — 三线汇聚节点（无圆形约束） -->
+  <!-- ============================================================ -->
+  <g transform="translate(60,566)">
+    <text class="lbl" x="0" y="0">C</text>
+    <text class="name" x="34" y="3" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">CONVERGENCE · 汇聚</text>
+    <text class="mean" x="34" y="25" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">寓意：三束信号（340nm / 450nm / 白光）在同一节点汇聚量化——最早的那束信号。</text>
+    <text class="desc" x="34" y="44" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">无圆形，三线粗笔触汇聚于琥珀实点。工程感 + 聚焦寓意强，远看即记。</text>
+
+    <!-- hero mark: three arms to amber node, 120° apart -->
+    <g transform="translate(40,56)">
+      <!-- arm from left -->
+      <line x1="4" y1="90" x2="78" y2="90" stroke="#0E7A5F" stroke-width="18" stroke-linecap="round"/>
+      <!-- arm from upper-right -->
+      <line x1="155" y1="22" x2="107" y2="78" stroke="#0E7A5F" stroke-width="18" stroke-linecap="round"/>
+      <!-- arm from lower-right -->
+      <line x1="155" y1="158" x2="107" y2="102" stroke="#0E7A5F" stroke-width="18" stroke-linecap="round"/>
+      <circle cx="90" cy="90" r="17" fill="#E8A33D"/>
+    </g>
+
+    <!-- horizontal lockup -->
+    <g transform="translate(270,106)">
+      <line x1="2" y1="52" x2="38" y2="52" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round"/>
+      <line x1="74" y1="18" x2="57" y2="44" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round"/>
+      <line x1="74" y1="86" x2="57" y2="60" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round"/>
+      <circle cx="48" cy="52" r="10" fill="#E8A33D"/>
+      <text class="wm" x="100" y="70" font-size="56" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+      <text class="sub" x="104" y="98" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+
+    <!-- dark bg -->
+    <g transform="translate(840,70)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(22,40)">
+        <line x1="2" y1="35" x2="30" y2="35" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+        <line x1="55" y1="8" x2="40" y2="28" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+        <line x1="55" y1="62" x2="40" y2="42" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="36" cy="35" r="7" fill="#E8A33D"/>
+      </g>
+      <text x="104" y="90" fill="#fff" font-size="28" font-weight="800" letter-spacing="3"
+            font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+    </g>
+
+    <!-- small size -->
+    <g transform="translate(1220,90)">
+      <text class="desc" x="0" y="-8" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">32px</text>
+      <line x1="1" y1="16" x2="13" y2="16" stroke="#0E7A5F" stroke-width="5" stroke-linecap="round"/>
+      <line x1="24" y1="4" x2="18" y2="13" stroke="#0E7A5F" stroke-width="5" stroke-linecap="round"/>
+      <line x1="24" y1="28" x2="18" y2="19" stroke="#0E7A5F" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="16" cy="16" r="4" fill="#E8A33D"/>
+    </g>
+    <!-- app icon -->
+    <g transform="translate(1280,70)">
+      <rect width="80" height="80" rx="18" fill="#0E7A5F"/>
+      <g transform="translate(14,16)">
+        <line x1="2" y1="24" x2="20" y2="24" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+        <line x1="40" y1="4" x2="28" y2="20" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+        <line x1="40" y1="44" x2="28" y2="28" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+        <circle cx="24" cy="24" r="7" fill="#E8A33D"/>
+      </g>
+    </g>
+  </g>
+
+  <line x1="60" y1="760" x2="1460" y2="760" stroke="#EDEFEE"/>
+
+  <!-- ============================================================ -->
+  <!-- D. LENS SHAPE — 镜片截面（双弧菱形）+ 焦点 -->
+  <!-- ============================================================ -->
+  <g transform="translate(60,796)">
+    <text class="lbl" x="0" y="0">D</text>
+    <text class="name" x="34" y="3" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">OPTIC LENS · 光学镜片</text>
+    <text class="mean" x="34" y="25" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">寓意：一片双凸镜片的剖面轮廓，琥珀点是被镜片聚焦的信号——光学代谢成像的核心动作。</text>
+    <text class="desc" x="34" y="44" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">非圆形，两段弧线合成的镜片形（Vesica Piscis 变体），克制、高级、有光学物理依据。</text>
+
+    <!-- hero mark: biconvex lens silhouette + amber dot -->
+    <g transform="translate(40,56)">
+      <!-- biconvex lens: two arcs -->
+      <path d="M 6 90 Q 90 10 174 90 Q 90 170 6 90 Z"
+            fill="none" stroke="#0E7A5F" stroke-width="16" stroke-linejoin="round"/>
+      <!-- subtle inner surface -->
+      <path d="M 38 90 Q 90 46 142 90 Q 90 134 38 90 Z"
+            fill="none" stroke="#0E7A5F" stroke-width="5" opacity="0.28"/>
+      <circle cx="90" cy="90" r="15" fill="#E8A33D"/>
+    </g>
+
+    <!-- horizontal lockup -->
+    <g transform="translate(270,108)">
+      <path d="M 4 52 Q 52 12 100 52 Q 52 92 4 52 Z"
+            fill="none" stroke="#0E7A5F" stroke-width="9" stroke-linejoin="round"/>
+      <path d="M 22 52 Q 52 30 82 52 Q 52 74 22 52 Z"
+            fill="none" stroke="#0E7A5F" stroke-width="3" opacity="0.28"/>
+      <circle cx="52" cy="52" r="9" fill="#E8A33D"/>
+      <text class="wm" x="118" y="70" font-size="56" font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+      <text class="sub" x="122" y="98" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+
+    <!-- dark bg -->
+    <g transform="translate(840,70)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(24,42)">
+        <path d="M 3 33 Q 33 8 63 33 Q 33 58 3 33 Z"
+              fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+        <circle cx="33" cy="33" r="6" fill="#E8A33D"/>
+      </g>
+      <text x="104" y="90" fill="#fff" font-size="28" font-weight="800" letter-spacing="3"
+            font-family="Montserrat,'Helvetica Neue',Arial,sans-serif">ORRION</text>
+    </g>
+
+    <!-- small size -->
+    <g transform="translate(1220,90)">
+      <text class="desc" x="0" y="-8" font-family="'Noto Sans CJK SC',Montserrat,sans-serif">32px</text>
+      <path d="M 2 16 Q 16 4 30 16 Q 16 28 2 16 Z"
+            fill="none" stroke="#0E7A5F" stroke-width="3.5" stroke-linejoin="round"/>
+      <circle cx="16" cy="16" r="3" fill="#E8A33D"/>
+    </g>
+    <!-- app icon -->
+    <g transform="translate(1280,70)">
+      <rect width="80" height="80" rx="18" fill="#0E7A5F"/>
+      <g transform="translate(6,10)">
+        <path d="M 4 30 Q 34 6 64 30 Q 34 54 4 30 Z"
+              fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+        <circle cx="34" cy="30" r="7" fill="#E8A33D"/>
+      </g>
+    </g>
+  </g>
+
+  <line x1="60" y1="1000" x2="1460" y2="1000" stroke="#EDEFEE"/>
+  <text x="60" y="1038" class="desc" font-size="14"
+        font-family="'Noto Sans CJK SC',Montserrat,sans-serif">说明：以上四款均无缺口，形态完整稳定。选定方向后出最终定稿（全套锁定 / 单色反白 / 设备蚀刻 / 间距栅格 / 最小尺寸 / 转曲文件）。</text>
+</svg>
