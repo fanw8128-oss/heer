@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION LOGO 概念稿 v2 — 大厂范 / 有寓意 / 自由形态(不限圆形) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="1060" viewBox="0 0 1520 1060" font-family="Montserrat,'Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <style>
+      .wm{fill:#10211C;font-weight:800;letter-spacing:7px;}
+      .sub{fill:#8A9A95;font-size:15px;letter-spacing:1px;}
+      .lbl{fill:#8A9A95;font-size:16px;letter-spacing:2px;font-weight:700;}
+      .name{fill:#10211C;font-size:21px;font-weight:800;}
+      .mean{fill:#0E7A5F;font-size:14px;font-weight:600;}
+      .desc{fill:#5B6B66;font-size:13px;}
+    </style>
+  </defs>
+  <rect width="1520" height="1480" fill="#FFFFFF"/>
+  <text x="60" y="52" font-size="26" font-weight="800" fill="#10211C">ORRION · LOGO 概念稿 v2 — 大厂范 · 有寓意 · 自由形态</text>
+  <line x1="60" y1="72" x2="1460" y2="72" stroke="#E2E8E5"/>
+
+  <!-- ================= A. LENS 透镜 (双弧合成镜片 + 焦点) ================= -->
+  <g transform="translate(60,108)">
+    <text class="lbl" x="0" y="0">A</text>
+    <text class="name" x="34" y="3">LENS · 透镜</text>
+    <text class="mean" x="34" y="25">寓意：一片镜片把世界聚到一点 —— 光学 + 聚焦最早的信号。</text>
+    <text class="desc" x="34" y="44">非圆形，弧线合成的镜片剖面，内嵌琥珀焦点。克制、高级。</text>
+
+    <g transform="translate(46,58)">
+      <path d="M6 70 Q86 6 166 70 Q86 134 6 70 Z" fill="none" stroke="#0E7A5F" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M44 70 Q86 44 128 70 Q86 96 44 70 Z" fill="none" stroke="#0E7A5F" stroke-width="3.5" opacity="0.35"/>
+      <circle cx="86" cy="70" r="13" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(270,118)">
+      <text class="wm" x="0" y="22" font-size="56">ORRION</text>
+      <text class="sub" x="3" y="52">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+    <g transform="translate(840,76)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(34,40)">
+        <path d="M4 35 Q47 4 90 35 Q47 66 4 35 Z" fill="none" stroke="#FFFFFF" stroke-width="4.5" stroke-linejoin="round"/>
+        <circle cx="47" cy="35" r="7" fill="#E8A33D"/>
+      </g>
+      <text x="140" y="92" fill="#fff" font-size="28" font-weight="800" letter-spacing="3">ORRION</text>
+    </g>
+  </g>
+  <line x1="60" y1="290" x2="1460" y2="290" stroke="#EDEFEE"/>
+
+  <!-- ================= B. FIRST SIGNAL 初信号 (起点焦点 + 上扬轨迹) ================= -->
+  <g transform="translate(60,326)">
+    <text class="lbl" x="0" y="0">B</text>
+    <text class="name" x="34" y="3">FIRST SIGNAL · 初信号</text>
+    <text class="mean" x="34" y="25">寓意：抓住最早那一束信号（琥珀起点），量化为向上的确定轨迹。</text>
+    <text class="desc" x="34" y="44">直接呼应 Slogan「量化最早的那一束信号」；动感、积极、向好。</text>
+
+    <g transform="translate(46,52)">
+      <path d="M22 122 C60 96 96 64 168 22" fill="none" stroke="#0E7A5F" stroke-width="15" stroke-linecap="round"/>
+      <circle cx="22" cy="122" r="15" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(270,112)">
+      <text class="wm" x="0" y="22" font-size="56">ORRION</text>
+      <text class="sub" x="3" y="52">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+    <g transform="translate(840,70)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(34,36)">
+        <path d="M14 72 C44 54 70 32 100 14" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
+        <circle cx="14" cy="72" r="9" fill="#E8A33D"/>
+      </g>
+      <text x="140" y="92" fill="#fff" font-size="28" font-weight="800" letter-spacing="3">ORRION</text>
+    </g>
+  </g>
+  <line x1="60" y1="510" x2="1460" y2="510" stroke="#EDEFEE"/>
+
+  <!-- ================= C. WORDMARK 字标主导 (O = 镜片/焦点, 内嵌符号) ================= -->
+  <g transform="translate(60,548)">
+    <text class="lbl" x="0" y="0">C</text>
+    <text class="name" x="34" y="3">WORDMARK · 字标主导</text>
+    <text class="mean" x="34" y="25">寓意：品牌名即标志，首字母 O 是镜片，中心琥珀点是被量化的信号。</text>
+    <text class="desc" x="34" y="44">最国际大厂的做法（如 Illumina/Roche）；符号藏进字母，整体即识别。</text>
+
+    <!-- hero wordmark: custom O ring + RRION -->
+    <g transform="translate(40,70)">
+      <circle cx="56" cy="56" r="44" fill="none" stroke="#0E7A5F" stroke-width="15"/>
+      <circle cx="56" cy="56" r="11" fill="#E8A33D"/>
+      <text x="118" y="86" font-size="92" font-weight="800" letter-spacing="4" fill="#10211C">RRION</text>
+    </g>
+    <g transform="translate(840,86)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(30,40)">
+        <circle cx="36" cy="36" r="28" fill="none" stroke="#FFFFFF" stroke-width="9.5"/>
+        <circle cx="36" cy="36" r="7" fill="#E8A33D"/>
+        <text x="78" y="62" font-size="58" font-weight="800" letter-spacing="2" fill="#fff">RRION</text>
+      </g>
+    </g>
+  </g>
+  <line x1="60" y1="760" x2="1460" y2="760" stroke="#EDEFEE"/>
+
+  <!-- ================= D. SPECTRUM 分光 (一束入射 → 量化分解) ================= -->
+  <g transform="translate(60,800)">
+    <text class="lbl" x="0" y="0">D</text>
+    <text class="name" x="34" y="3">SPECTRUM · 分光</text>
+    <text class="mean" x="34" y="25">寓意：一束光经镜节点被分解、量化 —— 把看不见的代谢信号变成可读的数据。</text>
+    <text class="desc" x="34" y="44">角形、工程感、最具技术语义；琥珀节点是测量焦点。</text>
+
+    <g transform="translate(46,52)">
+      <line x1="6" y1="70" x2="78" y2="70" stroke="#0E7A5F" stroke-width="13" stroke-linecap="round"/>
+      <line x1="78" y1="70" x2="172" y2="24" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round"/>
+      <line x1="78" y1="70" x2="172" y2="70" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round" opacity="0.6"/>
+      <line x1="78" y1="70" x2="172" y2="116" stroke="#0E7A5F" stroke-width="11" stroke-linecap="round" opacity="0.3"/>
+      <circle cx="78" cy="70" r="14" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(270,112)">
+      <text class="wm" x="0" y="22" font-size="56">ORRION</text>
+      <text class="sub" x="3" y="52">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+    <g transform="translate(840,70)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(30,40)">
+        <line x1="6" y1="35" x2="52" y2="35" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+        <line x1="52" y1="35" x2="112" y2="8" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+        <line x1="52" y1="35" x2="112" y2="35" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+        <line x1="52" y1="35" x2="112" y2="62" stroke="#fff" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+        <circle cx="52" cy="35" r="8" fill="#E8A33D"/>
+      </g>
+      <text x="150" y="92" fill="#fff" font-size="28" font-weight="800" letter-spacing="3">ORRION</text>
+    </g>
+  </g>
+  <line x1="60" y1="990" x2="1460" y2="990" stroke="#EDEFEE"/>
+
+  <text x="60" y="1030" class="desc" font-size="14">说明：以上均为自由形态、可缩放矢量；选定方向后我会做最终全套（多锁定 / 单色反白 / 设备蚀刻 / 最小尺寸 / 间距栅格 / 转曲定稿）。</text>
+</svg>
