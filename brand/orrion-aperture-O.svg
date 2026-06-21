@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION · APERTURE O 优化稿 + 含义图解 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1180" viewBox="0 0 1500 1180" font-family="Montserrat,'Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <style>
+      .wm{fill:#10211C;font-weight:800;letter-spacing:6px;}
+      .sub{fill:#8A9A95;font-size:15px;letter-spacing:1px;}
+      .lbl{fill:#8A9A95;font-size:15px;letter-spacing:2px;font-weight:700;}
+      .mean{fill:#0E7A5F;font-size:15px;font-weight:600;}
+      .desc{fill:#5B6B66;font-size:13px;}
+      .anno{fill:#10211C;font-size:14px;font-weight:600;}
+    </style>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 Z" fill="#E8A33D"/></marker>
+
+    <!-- reusable mark: gap at TOP (进光口), focal dot center -->
+    <g id="ap">
+      <circle cx="100" cy="100" r="66" fill="none" stroke="#0E7A5F" stroke-width="17"
+              stroke-dasharray="370 45" stroke-linecap="round" transform="rotate(-67.5 100 100)"/>
+      <circle cx="100" cy="100" r="12" fill="#E8A33D"/>
+    </g>
+    <g id="apMono">
+      <circle cx="100" cy="100" r="66" fill="none" stroke="currentColor" stroke-width="17"
+              stroke-dasharray="370 45" stroke-linecap="round" transform="rotate(-67.5 100 100)"/>
+      <circle cx="100" cy="100" r="12" fill="currentColor"/>
+    </g>
+  </defs>
+
+  <rect width="1500" height="1180" fill="#FFFFFF"/>
+  <text x="60" y="54" font-size="26" font-weight="800" fill="#10211C">ORRION · APERTURE O 光圈 O — 优化与含义</text>
+  <line x1="60" y1="76" x2="1440" y2="76" stroke="#E2E8E5"/>
+
+  <!-- HERO -->
+  <text class="lbl" x="60" y="118">标志 / SYMBOL</text>
+  <use href="#ap" transform="translate(40,130) scale(1.15)"/>
+
+  <!-- ANATOMY / 含义图解 -->
+  <text class="lbl" x="470" y="118">含义图解 / WHAT THE GAP MEANS</text>
+  <g transform="translate(520,150)">
+    <use href="#ap" transform="scale(1.05)"/>
+    <!-- incoming light ray through the top gap to focal dot -->
+    <line x1="105" y1="-2" x2="105" y2="92" stroke="#E8A33D" stroke-width="4" stroke-dasharray="2 5" marker-end="url(#arr)"/>
+    <!-- callouts -->
+    <line x1="150" y1="20" x2="240" y2="6" stroke="#C2C8CB"/><text class="anno" x="246" y="2">缺口＝光圈进光口</text><text class="desc" x="246" y="22">为「最早的信号」留一道入口</text>
+    <line x1="180" y1="105" x2="240" y2="105" stroke="#C2C8CB"/><text class="anno" x="246" y="100">绿环＝镜头光圈/光阑</text><text class="desc" x="246" y="120">代表光学采集系统</text>
+    <line x1="118" y1="118" x2="240" y2="190" stroke="#C2C8CB"/><text class="anno" x="246" y="190">琥珀焦点＝被量化的那束信号</text><text class="desc" x="246" y="210">光汇聚到此点 → 量化输出</text>
+    <text class="mean" x="0" y="290">一句话：进光（缺口）→ 聚焦（绿环）→ 量化（琥珀点）。</text>
+  </g>
+
+  <line x1="60" y1="470" x2="1440" y2="470" stroke="#EDEFEE"/>
+
+  <!-- LOCKUPS -->
+  <text class="lbl" x="60" y="510">横排锁定 / HORIZONTAL</text>
+  <use href="#ap" transform="translate(60,524) scale(0.62)"/>
+  <g transform="translate(220,556)">
+    <text class="wm" x="0" y="30" font-size="58">ORRION</text>
+    <text class="sub" x="4" y="60">Optical Metabolic Imaging · 光学代谢成像</text>
+  </g>
+
+  <text class="lbl" x="760" y="510">竖排 / STACKED</text>
+  <use href="#ap" transform="translate(800,520) scale(0.7)"/>
+  <text class="wm" x="847" y="690" font-size="42" text-anchor="middle">ORRION</text>
+  <text x="847" y="724" font-size="20" fill="#0E7A5F" font-weight="600" letter-spacing="14" text-anchor="middle">欧 锐 安</text>
+
+  <text class="lbl" x="1080" y="510">字母章 / MONOGRAM</text>
+  <use href="#ap" transform="translate(1120,524) scale(0.95)"/>
+
+  <line x1="60" y1="770" x2="1440" y2="770" stroke="#EDEFEE"/>
+
+  <!-- APPLICATIONS -->
+  <text class="lbl" x="60" y="810">单色 / MONO</text>
+  <use href="#apMono" transform="translate(60,824) scale(0.6)" color="#10211C"/>
+
+  <text class="lbl" x="240" y="810">反白 / 深色</text>
+  <rect x="240" y="824" width="150" height="150" rx="16" fill="#10211C"/>
+  <use href="#apMono" transform="translate(262,846) scale(0.53)" color="#FFFFFF"/>
+
+  <text class="lbl" x="430" y="810">小尺寸 24 / 32 / 48</text>
+  <g color="#0E7A5F">
+    <use href="#apMono" transform="translate(430,900) scale(0.12)"/>
+    <use href="#apMono" transform="translate(470,890) scale(0.16)"/>
+    <use href="#apMono" transform="translate(525,872) scale(0.24)"/>
+  </g>
+
+  <text class="lbl" x="680" y="810">APP 图标 / FAVICON</text>
+  <rect x="680" y="824" width="120" height="120" rx="26" fill="#0E7A5F"/>
+  <use href="#apMono" transform="translate(700,844) scale(0.4)" color="#FFFFFF"/>
+  <circle cx="740" cy="884" r="9" fill="#E8A33D"/>
+
+  <!-- GAP VARIANTS to choose -->
+  <text class="lbl" x="900" y="810">缺口角度 — 选最终 (1/2/3)</text>
+  <g transform="translate(900,830)">
+    <g transform="scale(0.5)"><circle cx="60" cy="60" r="44" fill="none" stroke="#0E7A5F" stroke-width="12" stroke-dasharray="258 18" stroke-linecap="round" transform="rotate(-80 60 60)"/><circle cx="60" cy="60" r="8" fill="#E8A33D"/></g>
+    <text class="desc" x="6" y="86">① 窄缺口</text>
+    <g transform="translate(150,0) scale(0.5)"><circle cx="60" cy="60" r="44" fill="none" stroke="#0E7A5F" stroke-width="12" stroke-dasharray="245 31" stroke-linecap="round" transform="rotate(-80 60 60)"/><circle cx="60" cy="60" r="8" fill="#E8A33D"/></g>
+    <text class="desc" x="156" y="86">② 中缺口(推荐)</text>
+    <g transform="translate(300,0) scale(0.5)"><circle cx="60" cy="60" r="44" fill="none" stroke="#0E7A5F" stroke-width="12" stroke-dasharray="222 54" stroke-linecap="round" transform="rotate(-80 60 60)"/><circle cx="60" cy="60" r="8" fill="#E8A33D"/></g>
+    <text class="desc" x="306" y="86">③ 宽缺口</text>
+  </g>
+
+  <line x1="60" y1="1000" x2="1440" y2="1000" stroke="#EDEFEE"/>
+  <text class="desc" x="60" y="1036" font-size="14">说明：缺口固定在正上方＝直观的「进光方向」。选定缺口角度后我出最终矢量定稿（含间距栅格、最小尺寸、印刷/丝印转曲文件）。</text>
+</svg>
