@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ORRION LOGO 概念稿 (3方向) — 极简 / 国际大厂 -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1180" viewBox="0 0 1500 1180" font-family="Montserrat,'Noto Sans CJK SC','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <style>
+      .wm{fill:#10211C;font-weight:800;letter-spacing:8px;}
+      .cn{fill:#0E7A5F;font-weight:600;letter-spacing:18px;}
+      .sub{fill:#8A9A95;font-size:15px;letter-spacing:1px;}
+      .lbl{fill:#8A9A95;font-size:16px;letter-spacing:2px;font-weight:700;}
+      .name{fill:#10211C;font-size:20px;font-weight:800;}
+      .desc{fill:#5B6B66;font-size:14px;}
+    </style>
+  </defs>
+  <rect width="1500" height="1180" fill="#FFFFFF"/>
+  <text x="60" y="56" font-size="26" font-weight="800" fill="#10211C">ORRION · LOGO 概念稿（请选方向）</text>
+  <line x1="60" y1="78" x2="1440" y2="78" stroke="#E2E8E5"/>
+
+  <!-- ============ A. FOCAL POINT (focus rings + signal dot) ============ -->
+  <g transform="translate(60,120)">
+    <text class="lbl" x="0" y="0">A</text>
+    <text class="name" x="34" y="4">FOCAL POINT · 焦点</text>
+    <text class="desc" x="34" y="26">一束信号被精准聚焦：双环聚焦 + 琥珀焦点。安静、精密、像顶级光学仪器。</text>
+
+    <!-- mark -->
+    <g transform="translate(40,60)">
+      <circle cx="80" cy="80" r="74" fill="none" stroke="#0E7A5F" stroke-width="5"/>
+      <circle cx="80" cy="80" r="46" fill="none" stroke="#0E7A5F" stroke-width="5" opacity="0.35"/>
+      <circle cx="80" cy="80" r="13" fill="#E8A33D"/>
+    </g>
+    <!-- lockup -->
+    <g transform="translate(240,95)">
+      <text class="wm" x="0" y="34" font-size="58">ORRION</text>
+      <text class="sub" x="4" y="64">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+    <!-- small test -->
+    <g transform="translate(700,72)">
+      <text class="desc" x="0" y="-6">小尺寸 32px</text>
+      <circle cx="16" cy="16" r="15" fill="none" stroke="#0E7A5F" stroke-width="2"/>
+      <circle cx="16" cy="16" r="9" fill="none" stroke="#0E7A5F" stroke-width="2" opacity="0.35"/>
+      <circle cx="16" cy="16" r="3.5" fill="#E8A33D"/>
+    </g>
+    <!-- dark test -->
+    <g transform="translate(820,40)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(36,35)">
+        <circle cx="40" cy="40" r="37" fill="none" stroke="#FFFFFF" stroke-width="3.5"/>
+        <circle cx="40" cy="40" r="23" fill="none" stroke="#FFFFFF" stroke-width="3.5" opacity="0.4"/>
+        <circle cx="40" cy="40" r="7" fill="#E8A33D"/>
+      </g>
+      <text x="130" y="92" fill="#fff" font-size="30" font-weight="800" letter-spacing="4">ORRION</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="450" x2="1440" y2="450" stroke="#EDEFEE"/>
+
+  <!-- ============ B. APERTURE O (the O is a lens) ============ -->
+  <g transform="translate(60,490)">
+    <text class="lbl" x="0" y="0">B</text>
+    <text class="name" x="34" y="4">APERTURE O · 光圈 O</text>
+    <text class="desc" x="34" y="26">品牌首字母 O = 镜头光圈，缺口处一点琥珀信号进入。强记忆、可作独立字母章。</text>
+
+    <g transform="translate(40,60)">
+      <circle cx="80" cy="80" r="66" fill="none" stroke="#0E7A5F" stroke-width="16"
+              stroke-dasharray="350 65" stroke-linecap="round" transform="rotate(-58 80 80)"/>
+      <circle cx="80" cy="80" r="11" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(240,95)">
+      <text class="wm" x="0" y="34" font-size="58">ORRION</text>
+      <text class="sub" x="4" y="64">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+    <g transform="translate(700,72)">
+      <text class="desc" x="0" y="-6">小尺寸 32px</text>
+      <circle cx="16" cy="16" r="13" fill="none" stroke="#0E7A5F" stroke-width="4" stroke-dasharray="68 13" stroke-linecap="round" transform="rotate(-58 16 16)"/>
+      <circle cx="16" cy="16" r="3" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(820,40)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(36,35)">
+        <circle cx="40" cy="40" r="33" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-dasharray="175 33" stroke-linecap="round" transform="rotate(-58 40 40)"/>
+        <circle cx="40" cy="40" r="6" fill="#E8A33D"/>
+      </g>
+      <text x="130" y="92" fill="#fff" font-size="30" font-weight="800" letter-spacing="4">ORRION</text>
+    </g>
+  </g>
+
+  <line x1="60" y1="820" x2="1440" y2="820" stroke="#EDEFEE"/>
+
+  <!-- ============ C. SIGNAL ARC (crescent capturing a point) ============ -->
+  <g transform="translate(60,860)">
+    <text class="lbl" x="0" y="0">C</text>
+    <text class="name" x="34" y="4">SIGNAL ARC · 信号弧</text>
+    <text class="desc" x="34" y="26">一道开口的弧"接住"最早那束信号。极简、动感、最现代，远看一眼记得住。</text>
+
+    <g transform="translate(40,52)">
+      <circle cx="80" cy="80" r="64" fill="none" stroke="#0E7A5F" stroke-width="18"
+              stroke-dasharray="300 102" stroke-linecap="round" transform="rotate(125 80 80)"/>
+      <circle cx="146" cy="118" r="13" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(240,90)">
+      <text class="wm" x="0" y="34" font-size="58">ORRION</text>
+      <text class="sub" x="4" y="64">Optical Metabolic Imaging · 光学代谢成像</text>
+    </g>
+    <g transform="translate(700,64)">
+      <text class="desc" x="0" y="-6">小尺寸 32px</text>
+      <circle cx="16" cy="16" r="12" fill="none" stroke="#0E7A5F" stroke-width="4.5" stroke-dasharray="56 19" stroke-linecap="round" transform="rotate(125 16 16)"/>
+      <circle cx="28.5" cy="23" r="3.2" fill="#E8A33D"/>
+    </g>
+    <g transform="translate(820,32)">
+      <rect width="320" height="150" rx="14" fill="#10211C"/>
+      <g transform="translate(36,33)">
+        <circle cx="42" cy="42" r="33" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-dasharray="155 53" stroke-linecap="round" transform="rotate(125 42 42)"/>
+        <circle cx="76" cy="62" r="7" fill="#E8A33D"/>
+      </g>
+      <text x="130" y="92" fill="#fff" font-size="30" font-weight="800" letter-spacing="4">ORRION</text>
+    </g>
+  </g>
+</svg>
